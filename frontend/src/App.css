@@ -1,0 +1,143 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.app-header .logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.app-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.2;
+}
+
+.app-header p {
+  color: #94a3b8;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.app-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.result-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border-left: 6px solid var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+}
+
+.result-card.fraud {
+  border-left-color: var(--danger-color);
+  background: rgba(220, 38, 38, 0.1);
+}
+
+.result-card.normal {
+  border-left-color: var(--success-color);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.result-card.error {
+  border-left-color: #f59e0b;
+}
+
+.result-card .icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.result-card .content {
+  flex: 1;
+  text-align: left;
+}
+
+.result-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.result-card.fraud h3 {
+  color: #fca5a5;
+}
+
+.result-card.normal h3 {
+  color: #6ee7b7;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stat-box {
+  background: rgba(15, 23, 42, 0.6);
+  padding: 0.8rem;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 120px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.stat-box .label {
+  display: block;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.3rem;
+}
+
+.stat-box .value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+.value.error-val {
+  color: #fcd34d;
+}
+
+.app-footer {
+  margin-top: 3rem;
+  color: #64748b;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,59 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# -----------------------------
+# Node / Vite / Frontend
+# -----------------------------
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -----------------------------
+# Editors / OS
+# -----------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# -----------------------------
+# Environment & secrets
+# -----------------------------
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+# ML artifacts (often large)
+# -----------------------------
+*.h5
+*.hdf5
+*.ckpt
+*.pt
+*.pth
+*.pkl
+
+# Keep this file to allow model directory structure if needed
+!models/.gitkeep
